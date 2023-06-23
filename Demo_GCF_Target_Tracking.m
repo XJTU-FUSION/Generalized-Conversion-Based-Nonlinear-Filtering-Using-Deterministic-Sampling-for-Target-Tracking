@@ -16,11 +16,11 @@ InitPos_x = -20000; % m
 InitVel_x = 300; % m/s
 InitPos_y = 15000; % m
 InitVel_y = -10; % m/s
-X = [InitPos_x;
+X0 = [InitPos_x;
       InitVel_x;
       InitPos_y;
       InitVel_y];
-P= diag([10000,5000,10000,5000]);
+P0 = diag([10000,5000,10000,5000]);
 
 T=1;
 F = [1 T 0 0;
@@ -84,9 +84,7 @@ end
 
 %% Monte Carlo runs
 for j = 1:runs
-         P0 = P;
-         X0 = X;
-         
+
          X = mvnrnd(X0, P0)';   
 
 
