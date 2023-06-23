@@ -85,7 +85,9 @@ end
 %% Monte Carlo runs
 for j = 1:runs
          P0 = P;
-         X0 = mvnrnd(X,P0)';    
+         X0 = X;
+         
+         X = mvnrnd(X0, P0)';   
 
 
          X_GCF = X0;
