@@ -3,7 +3,7 @@ function [xkk, Pkk, n_c] = GCF(My, xk_1k_1,Pk_1k_1,zk,...
 %% Generalized conversion based filter (GCF) for target tracking using polar measurements
 % reference:
 % "Generalized Conversion Based Nonlinear Filtering Using Deterministic Sampling for Target Tracking" 
-% (submitted to IEEE Transactions on Aerospace and Electronic Systems) by Jian Lan, 2023.
+% (IEEE Transactions on Aerospace and Electronic Systems) by Jian Lan, 2023.
 % Copyright by Jian Lan, Xi'an Jiaotong University
 % Email:lanjian@mail.xjtu.edu.cn
 
